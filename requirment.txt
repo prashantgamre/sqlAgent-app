@@ -1,10 +1,4 @@
-psycopg2
-streamlit
+langchain
+langchain-anthropic
 python-dotenv
-streamlit-connection
-streamlit-connection-postgresql
-langchain.agents
-langchain.sql_database
-langchain.agents.agent_toolkits
-langchain_community
-langchain_anthropic
+streamlit
