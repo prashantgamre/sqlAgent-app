@@ -6,18 +6,12 @@ from dotenv import load_dotenv
 import streamlit as st
 load_dotenv()
 
-llm = ChatAnthropic(model="claude-3-5-sonnet-20241022", temperature=0.5)
+api = st.secrets["ANTHROPIC_API_KEY"]
+llm = ChatAnthropic(api_key=api,model="claude-3-5-sonnet-20241022", temperature=0.5)
 database = SQLDatabase.from_uri("postgresql+psycopg2://postgres:admin@localhost/Ai_agent",
 include_tables=['inventory','products','sales','suppliers'])
 toolkit = SQLDatabaseToolkit(db=database, llm=llm)
 agent = create_sql_agent(llm, toolkit, verbose=True)
-
-# conn = psycopg2.connect(
-#     host="localhost",
-#     database="Ai_agent",
-#     user="postgres",
-#     password="admin"
-# )
 
 
 
