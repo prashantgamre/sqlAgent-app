@@ -1,3 +1,4 @@
+import langchain
 from langchain.agents import create_sql_agent
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 from langchain_anthropic import ChatAnthropic 
