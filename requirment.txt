@@ -1,4 +1,3 @@
-langchain
 psycopg2
 streamlit
 python-dotenv
