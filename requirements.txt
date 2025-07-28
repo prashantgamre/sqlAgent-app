@@ -5,3 +5,4 @@ streamlit
 langchain-community
 psycopg2
 psycopg2-binary
+pip
