@@ -1,5 +1,11 @@
 langchain
-langchain_anthropic
 psycopg2
 streamlit
 python-dotenv
+streamlit-connection
+streamlit-connection-postgresql
+langchain.agents
+langchain.sql_database
+langchain.agents.agent_toolkits
+langchain_community
+langchain_anthropic
