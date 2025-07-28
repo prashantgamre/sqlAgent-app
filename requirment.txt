@@ -1,0 +1,5 @@
+langchain
+langchain_anthropic
+psycopg2
+streamlit
+python-dotenv
